@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Do you want to go on a data with me hehe</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+   <div class="container">
+        <div>
+            <h1 class="header_text">Do you want to go on a data with me hehe</h1>
+        </div>
+        <div class="gif_container">
+            <img class="pic" src="luffy-monkey-d-luffy.gif" alt="luffy">
+
+        </div>
+        <div class="buttons">
+            <button class="btn" id="Yesbutton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="Nobutton" onmouseover="moveButton()">No</button>
+            <!-- <div id="hoverCount">No button hovered over: 0 times</div> -->
+            <script>
+                var hoverCounter = 0; // Global counter variable
+                localStorage.setItem('test', hoverCounter);
+                console.log("test variable" + localStorage.getItem('test'));
+                function nextPage(){
+                    console.log("No button was hovered over " + hoverCounter + " times before clicking Yes.");
+                    // localStorage.setItem('hoverCounter', hoverCounter);
+                    window.location.href = "yes.html";
+                }
+                function moveButton(){
+                    var button = document.getElementById('Nobutton');
+                    var x = Math.random() * (window.innerWidth - document.getElementById('Nobutton').offsetWidth);
+                    var y = Math.random() * (window.innerHeight - document.getElementById('Nobutton').offsetHeight);
+                    button.style.position = 'absolute'; 
+                    document.getElementById('Nobutton').style.left = `${x}px`;
+                    document.getElementById('Nobutton').style.top = `${y}px`;
+                    // Increment and display the hover counter
+                    hoverCounter++;
+                    // document.getElementById('hoverCount').innerText = "No button hovered over: " + hoverCounter + " times";
+                    localStorage.setItem('hoverCounter', hoverCounter);
+                    console.log("hoverCounter variable" + localStorage.getItem('hoverCounter'));
+                    // button.style.position = 'absolute'; 
+                    // button.style.left = x + 'px';
+                    // button.style.top = y + 'px';
+                }
+            </script>
+
+        </div>
+        <div id="hoverCount"></div>
+
+   </div>
+  </body>
+</html>

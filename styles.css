@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F8C8DC;
+    margin: 0px;
+}
+
+#Nobutton {
+    /* position: absolute; */
+    /* margin-left: 150px; */
+    transition: 0.5s;
+    justify-content: center;
+}
+
+#Yesbutton {
+    /* position: absolute; */
+    /* margin-left: 150px; */
+    justify-content: center;
+    
+}
+
+.header_text{
+    font-family: 'Nunito';
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.text{
+
+        font-family: 'Nunito';
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 0px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.btn{
+    background-color: #FFD6C1;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    justify-content: center;
+    /* transition:background-color 0.3s case; */
+    
+    
+}
+.btn:hover{
+    background-color: #f8f2f4;
+    
+}
+
+.gif_container {
+    /* Center the container itself */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Optional: Set a specific height if needed */
+    /* height: 300px; */
+}
+
+.pic {
+    /* Set max-width and max-height to make the GIF smaller */
+    max-width: 300px; /* Adjust this value to your preference */
+    max-height: auto; /* This maintains the aspect ratio of the image */
+
+    /* Optional: Add additional styling as needed */
+}
+
+.pic2{
+    max-width: 300px; /* Adjust this value to your preference */
+    max-height: auto; /* This maintains the aspect ratio of the image */
+    margin-right: 30px;
+}
